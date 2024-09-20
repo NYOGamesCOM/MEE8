@@ -40,8 +40,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
+  
 </head>
-<%- include("../partials/dashMenu", { bot, user, path, description, title: `Pogy
+<%- include("../partials/dashMenu", { bot, user, path, description, title: `Marksoft
 - Dashboard`, url})%>
 
 <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
@@ -67,21 +68,21 @@
           />
           <p class="server-name" style="font-size: 26px"><%= guild.name %></p>
         </div>
-        <p>Settings</p>
+
         <li>
           <a href="/dashboard/<%= guild.id %>"
             ><span
-              ><i class="fa fa-gear" style="color: white; font-size: 17px"></i>
+              ><i class="fa fa-gear" style="color: rgb(74, 61, 255); font-size: 17px"></i>
               Bot Settings</span
             ></a
           >
         </li>
         <li>
-          <a href="/dashboard/<%= guild.id %>/commands" class="active"
+          <a class="active" href="/dashboard/<%= guild.id %>/commands"
             ><span
               ><i
                 class="fa fa-wrench"
-                style="color: white; font-size: 17px"
+                style="color: rgb(55, 175, 95); font-size: 17px"
               ></i>
               Commands</span
             ></a
@@ -92,7 +93,7 @@
             ><span
               ><i
                 class="fa fa-sign-out"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Welcome</span
             ></a
@@ -101,18 +102,18 @@
         <li>
           <a href="/dashboard/<%= guild.id %>/members"
             ><span
-              ><i class="fa fa-users" style="color: white; font-size: 17px"></i>
+              ><i class="fa fa-users" style="color: rgb(74, 61, 255); font-size: 17px"></i>
               Members</span
             ></a
           >
         </li>
-        <p>Moderation</p>
+
         <li>
           <a href="/dashboard/<%= guild.id %>/automod"
             ><span
               ><i
                 class="fa fa-shield"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Auto Mod</span
             ></a
@@ -121,7 +122,7 @@
         <li>
           <a href="/dashboard/<%= guild.id %>/moderation"
             ><span
-              ><i class="fa fa-legal" style="color: white; font-size: 17px"></i>
+              ><i class="fa fa-legal" style="color: rgb(74, 61, 255); font-size: 17px"></i>
               Moderation</span
             ></a
           >
@@ -129,7 +130,7 @@
         <li>
           <a href="/dashboard/<%= guild.id %>/logging"
             ><span
-              ><i class="fa fa-book" style="color: white; font-size: 17px"></i>
+              ><i class="fa fa-book" style="color: rgb(74, 61, 255); font-size: 17px"></i>
               Logging</span
             ></a
           >
@@ -139,7 +140,7 @@
             ><span
               ><i
                 class="fa fa-user-plus"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Auto Role</span
             ></a
@@ -150,19 +151,19 @@
             ><span
               ><i
                 class="fa fa-address-card"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Alt Detector</span
             ></a
           >
         </li>
-        <p>Utilities</p>
+
         <li>
           <a href="/dashboard/<%= guild.id %>/reactionroles"
             ><span
               ><i
                 class="fa fa-support"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Reaction Roles</span
             ></a
@@ -173,9 +174,9 @@
             ><span
               ><i
                 class="fa fa-signal"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
-              Levels</span
+              Twitch</span
             ></a
           >
         </li>
@@ -183,7 +184,7 @@
         <li>
           <a href="/dashboard/<%= guild.id %>/embeds"
             ><span
-              ><i class="fa fa-image" style="color: white; font-size: 17px"></i>
+              ><i class="fa fa-image" style="color: rgb(74, 61, 255); font-size: 17px"></i>
               Embeds</span
             ></a
           >
@@ -193,7 +194,7 @@
             ><span
               ><i
                 class="fa fa-ticket"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Tickets</span
             ></a
@@ -204,19 +205,19 @@
             ><span
               ><i
                 class="fa fa-file-text"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Applications</span
             ></a
           >
         </li>
-        <p>Channels</p>
+
         <li>
           <a href="/dashboard/<%= guild.id %>/Suggestions"
             ><span
               ><i
                 class="fa fa-lightbulb-o"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Suggestions</span
             ></a
@@ -227,7 +228,7 @@
             ><span
               ><i
                 class="fa fa-exclamation-triangle"
-                style="color: white; font-size: 17px"
+                style="color: rgb(74, 61, 255); font-size: 17px"
               ></i>
               Server Reports</span
             ></a
@@ -236,16 +237,177 @@
       </ul>
     </div>
 
-    <div class="botsettings">
-      <div class="alert alert-info" role="alert">
-        <i class="fa fa-info-circle" style="font-size: 16px"></i>This Page is
-        currently under Development, feel free to come back later.
+    <div class="main-content">
+      <h1>Commands for <%= guild.name %></h1>
+        
+      <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search commands...">
       </div>
+
+      <div class="category-list" id="category-list">
+          <!-- Category cards will be dynamically inserted here -->
+      </div>
+
+      <div class="command-list" id="command-list">
+          <!-- Command cards will be dynamically inserted here -->
+      </div>
+      <div class="pagination">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-info"></span>
+        <button id="next-page">Next</button>
+    </div>
     </div>
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+  const commands = <%- JSON.stringify(commands) %>;
+  const categoryList = document.getElementById('category-list');
+  const commandList = document.getElementById('command-list');
+  const searchInput = document.getElementById('search-input');
+  const prevPageBtn = document.getElementById('prev-page');
+  const nextPageBtn = document.getElementById('next-page');
+  const pageInfo = document.getElementById('page-info');
+  
+  let currentPage = 1;
+  const commandsPerPage = 15;
+  let filteredCommands = commands;
+  let currentCategory = 'All';
+  
+  const categoryIcons = {
+  "Alt Detector": "🛡️",
+  "Applications": "📱",
+  "config": "⚙️",
+  "Utility": "🛠️",
+  "fun": "🎉",
+  "images": "🖼️",
+  "Information": "ℹ️",
+  "Moderation": "🛑",
+  "Music": "🎵",
+  "premium": "💎",
+  "Reaction Role": "🎭",
+  "Tickets": "🎫",
+  "twitch": "📺",
+  "General": "📂"
+};
 
+function createCategoryItem(category) {
+  const item = document.createElement('div');
+  item.className = 'category-item';
+  
+  const icon = categoryIcons[category] || "📂";
+  item.innerHTML = `<span class="category-icon">${icon}</span> ${category}`;
+  
+  item.addEventListener('click', () => filterCommandsByCategory(category));
+  
+  return item;
+}
+  
+  function createCommandCard(command) {
+    const card = document.createElement('div');
+    card.className = 'command-card';
+    card.innerHTML = `
+      <div class="command-name">${command.name}</div>
+      <div class="command-description">${command.description || 'No description provided.'}</div>
+      <div class="command-details">
+        <strong>Category:</strong> ${command.category || 'General'}<br>
+        <strong>Usage:</strong> ${command.usage || 'No usage provided.'}<br>
+        <strong>Aliases:</strong> ${command.aliases && command.aliases.length ? command.aliases.join(', ') : 'None'}<br>
+        <strong>Cooldown:</strong> ${command.cooldown ? command.cooldown + 's' : '5s'}<br>
+      </div>
+    `;
+    return card;
+  }
+  
+  function displayCategories() {
+    const categories = ['All', ...new Set(commands.map(cmd => cmd.category || 'General'))];
+    categoryList.innerHTML = '';
+    categories.forEach(category => {
+      const item = createCategoryItem(category);
+      if (category === currentCategory) {
+        item.classList.add('active');
+      }
+      categoryList.appendChild(item);
+    });
+  }
+  
+  function displayCommands() {
+    commandList.innerHTML = '';
+    const startIndex = (currentPage - 1) * commandsPerPage;
+    const endIndex = startIndex + commandsPerPage;
+    const pageCommands = filteredCommands.slice(startIndex, endIndex);
+    
+    pageCommands.forEach(command => {
+      commandList.appendChild(createCommandCard(command));
+    });
+    
+    updatePagination();
+  }
+  
+  function updatePagination() {
+    const totalPages = Math.ceil(filteredCommands.length / commandsPerPage);
+    pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+    prevPageBtn.disabled = currentPage === 1;
+    nextPageBtn.disabled = currentPage === totalPages;
+  }
+  
+  function filterCommandsByCategory(category) {
+    currentCategory = category;
+    document.querySelectorAll('.category-item').forEach(item => {
+      item.classList.remove('active');
+      if (item.textContent === category) {
+        item.classList.add('active');
+      }
+    });
+    if (category === 'All') {
+      filteredCommands = commands;
+    } else {
+      filteredCommands = commands.filter(cmd => (cmd.category || 'General') === category);
+    }
+    currentPage = 1;
+    displayCommands();
+  }
+  
+  function filterCommands() {
+    const searchTerm = searchInput.value.toLowerCase();
+    if (currentCategory === 'All') {
+      filteredCommands = commands.filter(command => 
+        command.name.toLowerCase().includes(searchTerm) ||
+        (command.description && command.description.toLowerCase().includes(searchTerm))
+      );
+    } else {
+      filteredCommands = commands.filter(command => 
+        (command.category || 'General') === currentCategory &&
+        (command.name.toLowerCase().includes(searchTerm) ||
+         (command.description && command.description.toLowerCase().includes(searchTerm)))
+      );
+    }
+    currentPage = 1;
+    displayCommands();
+  }
+  
+  searchInput.addEventListener('input', filterCommands);
+  
+  prevPageBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      displayCommands();
+    }
+  });
+  
+  nextPageBtn.addEventListener('click', () => {
+    const totalPages = Math.ceil(filteredCommands.length / commandsPerPage);
+    if (currentPage < totalPages) {
+      currentPage++;
+      displayCommands();
+    }
+  });
+  
+  // Initial display
+  displayCategories();
+  displayCommands();
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
 <style>
@@ -253,10 +415,172 @@
     margin: 0;
     padding: 0;
   }
+
   body {
     font-family: "Hind Vadodara", -apple-system, BlinkMacSystemFont, Segoe UI,
       Helvetica Neue, Arial, sans-serif;
   }
+
+  .container {
+    max-width: 100vw; /* Prevents overflow beyond the viewport */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.main-content {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+  .category-item {
+    background-color: #40444b;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .category-item:hover,
+  .category-item.active {
+    background-color: #7289da;
+  }
+
+  .search-bar {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1c1c1c;
+    /* Dark gray for search bar */
+    color: #ffffff;
+    /* White text in search bar */
+    border: 2px solid #7289da;
+    /* Light blue border */
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .search-bar input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(114, 137, 218, 0.5);
+  }
+
+  .category-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap when necessary */
+    overflow-x: auto; /* Handle overflow if necessary */
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.command-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust column min-width */
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .command-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the grid for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .command-list {
+        grid-template-columns: 1fr; /* Stacks elements on smaller screens */
+    }
+}
+
+  .command-card {
+    background-color: #1c1c1c;
+    /* Dark gray for cards */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    /* White text in command cards */
+  }
+
+  .command-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .command-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #7289da;
+    /* Light blue for accent */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #7289da;
+    /* Light blue border */
+    padding-bottom: 5px;
+  }
+
+  .command-description {
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+
+  .command-details {
+    font-size: 0.9em;
+    color: #b9bbbe;
+    /* Slightly lighter gray */
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .pagination button {
+    background-color: #7289da;
+    /* Light blue button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pagination button:hover {
+    background-color: #5865f2;
+    /* Darker blue on hover */
+  }
+
+  .pagination button:disabled {
+    background-color: #1c1c1c;
+    /* Dark gray for disabled button */
+    cursor: not-allowed;
+  }
+
+  /* Animated background for sidebar */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .container {
     display: flex;
     height: 100vh;
@@ -264,14 +588,23 @@
     flex-wrap: wrap;
     overflow: hidden;
   }
+
+  .sidebar {
+    background: linear-gradient(-45deg, #23272a, #2c2f33, #23272a, #2c2f33);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+
   button:focus {
     outline: none;
   }
+
   .main {
     height: calc(100% - 50px);
     display: flex;
     flex: 1;
   }
+
   .botsettings {
     border-radius: 10px;
     padding-top: 20px;
@@ -279,56 +612,66 @@
     padding-bottom: 60px;
     padding-left: 60px;
   }
+
   .alert.alert-info {
     background-color: rgba(217, 237, 247, 1);
     color: rgba(49, 112, 143, 1);
     border-color: rgba(126, 182, 193, 1);
   }
+
   .sidebar {
-    height: 100%;
-    width: 220px;
-    box-sizing: border-box;
-    box-shadow: 0 0 2rem 0 rgb(0 0 0 / 5%);
-    overflow: hidden;
-    transition: width 0.5s ease;
-    overflow-y: scroll;
-  }
-  .container.nav-closed .sidebar,
-  .container.nav-closed .header-logo {
-    width: 0;
-  }
-  .sidebar ul {
-    display: flex;
-    flex-direction: column;
+    width: 250px;
+    background-color: #2f2f2f;
     padding: 5px;
+    overflow-y: auto;
+    transition: width 0.3s ease;
   }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
   .sidebar ul li {
-    display: flex;
-    align-items: center;
+    margin-bottom: 10px;
   }
+
   .sidebar ul li a {
     color: #fff;
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 10px;
-    white-space: nowrap;
+    padding: 1px;
+    border-radius: 1px;
+    transition: background-color 0.3s ease;
   }
-  .sidebar ul li a.active,
-  .sidebar ul li a:hover {
-    background: #2f2f2f;
+
+  .sidebar ul li a:hover,
+  .sidebar ul li a.active {
+    background-color: #444;
   }
-  .sidebar ul li span {
-    margin-left: 16px;
-    font-size: 16px;
-    font-weight: 100;
-  }
-  .sidebar ul li i {
+
+  .sidebar ul li a i {
+    margin-right: 10px;
     font-size: 18px;
-    color: #111;
-    font-weight: normal;
   }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 0;
+      padding: 0;
+    }
+
+    .sidebar.open {
+      width: 250px;
+      padding: 20px;
+    }
+
+    .rr {
+      padding: 10px;
+    }
+  }
+
   .header {
     height: 50px;
     background: #2f2f2f;
@@ -337,9 +680,7 @@
     align-items: center;
     flex-basis: 100%;
   }
-  .sidebar ul li a.active i {
-    color: purple;
-  }
+
   .site-logo {
     height: 32px;
     width: 32px;
@@ -347,26 +688,31 @@
     min-width: 32px;
     margin: 0 18px 0 15px;
   }
+
   .site-logo path {
     fill: #fff;
   }
+
   .site-title {
     color: #fff;
     font-size: 24px;
     letter-spacing: 1px;
     font-weight: 400;
   }
+
   .page-content {
     padding: 10px 20px;
     box-sizing: border-box;
     width: 100%;
     flex: 1;
   }
+
   .page-content h1 {
     font-size: 20px;
     font-weight: 400;
     color: #333;
   }
+
   .header-search {
     height: 100%;
     align-items: center;
@@ -374,6 +720,7 @@
     padding: 0 20px;
     flex: 1;
   }
+
   .header-search .button-menu {
     width: 23px;
     height: 23px;
@@ -382,6 +729,7 @@
     border: 0;
     cursor: pointer;
   }
+
   .header-logo {
     display: flex;
     align-items: center;
@@ -389,6 +737,7 @@
     overflow: hidden;
     transition: width 0.5s ease;
   }
+
   .header-search input[type="search"] {
     height: 100%;
     width: 300px;
@@ -400,29 +749,36 @@
     border: none;
     color: #fff;
   }
+
   .header-search input[type="search"]:focus {
     outline: none;
   }
+
   .header-search input[type="search"]::placeholder {
     color: #ccc;
   }
+
   .header-search .button-menu:focus {
     outline: none;
     border: none;
   }
+
   .header-search .button-menu svg path {
     fill: #fff;
   }
+
   @media screen and (max-width: 991px) {
     .page-content {
       width: 100vw;
     }
   }
+
   @media screen and (max-width: 767px) {
     .header-logo {
       display: none;
     }
   }
+
   .drop {
     position: relative;
     -webkit-user-select: none;
@@ -430,24 +786,30 @@
     -ms-user-select: none;
     user-select: none;
   }
+
   .drop.open {
     z-index: 100;
   }
+
   .drop.open .drop-screen {
     z-index: 100;
     display: block;
   }
+
   .drop.open .drop-options {
     z-index: 200;
     max-height: 200px;
   }
+
   .drop.open .drop-display {
     z-index: 200;
     border-color: #465;
   }
+
   .drop select {
     display: none;
   }
+
   .drop .drop-screen {
     position: fixed;
     width: 100%;
@@ -477,9 +839,11 @@
     font-size: 16px;
     min-height: 58px;
   }
+
   .drop .drop-display:hover:after {
     opacity: 0.75;
   }
+
   .drop .drop-display:after {
     font-family: "Material Icons";
     content: "\e5c6";
@@ -489,6 +853,7 @@
     font-size: 24px;
     color: #444;
   }
+
   .drop .drop-display .item {
     position: relative;
     display: inline-block;
@@ -499,6 +864,7 @@
     height: 40px;
     line-height: 36px;
   }
+
   .drop .drop-display .item .btnclose {
     color: #444;
     position: absolute;
@@ -507,22 +873,27 @@
     top: 10px;
     cursor: pointer;
   }
+
   .drop .drop-display .item .btnclose:hover {
     opacity: 0.75;
   }
+
   .drop .drop-display .item.remove {
     -webkit-animation: removeSelected 0.2s, hide 1s infinite;
     animation: removeSelected 0.2s, hide 1s infinite;
     -webkit-animation-delay: 0s, 0.2s;
     animation-delay: 0s, 0.2s;
   }
+
   .drop .drop-display .item.add {
     -webkit-animation: addSelected 0.2s;
     animation: addSelected 0.2s;
   }
+
   .drop .drop-display .item.hide {
     display: none;
   }
+
   .drop .drop-options {
     background: #444;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
@@ -533,6 +904,7 @@
     transition: all 0.25s linear;
     z-index: 1;
   }
+
   .drop .drop-options a {
     display: block;
     height: 40px;
@@ -544,19 +916,23 @@
     transition: all 1s;
     overflow: hidden;
   }
+
   .drop .drop-options a:hover {
     background: #465;
     cursor: pointer;
   }
+
   .drop .drop-options a.remove {
     -webkit-animation: removeOption 0.2s;
     animation: removeOption 0.2s;
     max-height: 0px;
   }
+
   .drop .drop-options a.add {
     -webkit-animation: addOption 0.2s;
     animation: addOption 0.2s;
   }
+
   .drop .drop-options a.hide {
     display: none;
   }
@@ -566,6 +942,7 @@
       -webkit-transform: scale(0);
       transform: scale(0);
     }
+
     to {
       -webkit-transform: scale(1);
       transform: scale(1);
@@ -577,84 +954,103 @@
       -webkit-transform: scale(0);
       transform: scale(0);
     }
+
     to {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
   }
+
   @-webkit-keyframes removeOption {
     from {
       max-height: 40px;
     }
+
     to {
       max-height: 0px;
     }
   }
+
   @keyframes removeOption {
     from {
       max-height: 40px;
     }
+
     to {
       max-height: 0px;
     }
   }
+
   @-webkit-keyframes addOption {
     from {
       max-height: 0px;
     }
+
     to {
       max-height: 40px;
     }
   }
+
   @keyframes addOption {
     from {
       max-height: 0px;
     }
+
     to {
       max-height: 40px;
     }
   }
+
   @-webkit-keyframes removeSelected {
     from {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
+
     to {
       -webkit-transform: scale(0);
       transform: scale(0);
     }
   }
+
   @keyframes removeSelected {
     from {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
+
     to {
       -webkit-transform: scale(0);
       transform: scale(0);
     }
   }
+
   @-webkit-keyframes addSelected {
     from {
       -webkit-transform: scale(0);
       transform: scale(0);
     }
+
     to {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
   }
+
   @keyframes addSelected {
     from {
       -webkit-transform: scale(0);
       transform: scale(0);
     }
+
     to {
       -webkit-transform: scale(1);
       transform: scale(1);
     }
   }
+
   @-webkit-keyframes hide {
+
     from,
     to {
       max-height: 0px;
@@ -664,7 +1060,9 @@
       border-width: 0px;
     }
   }
+
   @keyframes hide {
+
     from,
     to {
       max-height: 0px;
@@ -682,22 +1080,25 @@
     width: 35px;
     height: 35px;
   }
+
   .hidden {
     display: none;
   }
 
-  input[type="checkbox"] + label {
+  input[type="checkbox"]+label {
     position: relative;
   }
 
-  input[type="checkbox"]:checked + label {
+  input[type="checkbox"]:checked+label {
     animation: closing 0.3s forwards ease-in-out,
       moving 0.3s forwards ease-in-out;
   }
+
   .pointer-cursor {
     cursor: pointer;
     cursor: hand;
   }
+
   .close {
     float: right;
     color: #b94b45;
@@ -727,17 +1128,20 @@
     from {
       opacity: 1;
     }
+
     to {
       opacity: 0;
     }
   }
 
   @keyframes moving {
+
     0%,
     90% {
       top: 0;
       left: 0;
     }
+
     100% {
       top: -100px;
       left: 0;
@@ -747,6 +1151,7 @@
   * {
     box-sizing: border-box;
   }
+
   .tooltip {
     position: relative;
     display: inline-block;
@@ -781,6 +1186,7 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
   .alertpremium {
     width: 1000px;
     padding: 12px 16px;
@@ -790,20 +1196,24 @@
     margin-bottom: 12px;
     font-size: 16px;
   }
+
   .alertpremium.premium {
     background-color: rgba(248, 215, 218, 1);
     border-color: rgba(220, 53, 69, 1);
     color: rgba(114, 28, 36, 1);
   }
+
   .alertparagraph {
     display: inline;
   }
+
   /* Create three equal columns that floats next to each other */
   .column {
     float: left;
     width: 33.33%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 300px;
+    /* Should be removed. Only for demonstration */
   }
 
   /* Clear floats after the columns */
@@ -820,20 +1230,23 @@
     }
   }
 
-  .pogy:hover {
+  .marksoft:hover {
     opacity: 0.5;
     -box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.4s ease 0s;
   }
+
   .server-image {
     width: 119px;
     margin-left: 0;
     margin-right: 0;
     height: 119px;
     border-radius: 50%;
-    transition: transform 0.2s; /* Animation */
+    transition: transform 0.2s;
+    /* Animation */
   }
+
   .server-image:hover {
     transform: scale(1.1);
   }
@@ -930,10 +1343,14 @@ POPUP
     box-sizing: border-box;
     padding: 5% 15%;
 
-    height: calc(100vh - 40px); /* 1 */
-    margin: auto; /* 1 */
-    overflow: auto; /* 1 */
-    overscroll-behavior: contain; /* 1 */
+    height: calc(100vh - 40px);
+    /* 1 */
+    margin: auto;
+    /* 1 */
+    overflow: auto;
+    /* 1 */
+    overscroll-behavior: contain;
+    /* 1 */
   }
 
   .popup__title {
@@ -952,7 +1369,6 @@ POPUP
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
   }
 
   /*
@@ -1024,17 +1440,18 @@ animation
     container.classList.add("nav-closed");
   }
 
-  menuButton.addEventListener("click", function () {
+  menuButton.addEventListener("click", function() {
     container.classList.toggle("nav-closed");
   });
 
-  pageContent.addEventListener("click", function () {
+  pageContent.addEventListener("click", function() {
     if (window.innerWidth <= responsiveBreakpoint) {
       container.classList.add("nav-closed");
     }
   });
 
-  window.addEventListener("resize", function () {
+
+  window.addEventListener("resize", function() {
     if (window.innerWidth > responsiveBreakpoint) {
       container.classList.remove("nav-closed");
     }
